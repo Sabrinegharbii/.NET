@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "5jvC6Vnvpps1KxhlkLIvJTLCPtsAvtYrcSqzXb0G/RErd/3E+AcqmGzoE3oFZgqoflAPYl9lZEevPdMPIkrm4A==",
+  "dgSpecHash": "dqonlaxeQyC6t5tbc4APHBWI6JhkmcjiS6trA1YszT97ANe4ONdsFWv2Vp2y/sbEavM5PmVlMNwkPla70h91vQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sabrine\\Desktop\\nett\\AirportManagement\\AM.ApplicationCore\\AM.ApplicationCore.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Sabrine\\.nuget\\packages\\autofac\\7.0.1\\autofac.7.0.1.nupkg.sha512",
+    "C:\\Users\\Sabrine\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
+  ],
   "logs": []
 }
