@@ -31,12 +31,12 @@ namespace AM.ApplicationCore.Services
 
         public IList<IGrouping<int,Flight>> GetFlights(int n)
         {
-           return GetAll().OrderByDescending(p=>p.PlaneId).Take(n).SelectMany(p=>p.Flights).GroupBy(f=>f.Plane.PlaneId).ToList();
+           return GetAll().OrderByDescending(p=>p.PlaneId).Take(n).SelectMany(p=>p.Flights).GroupBy(f=>f.plane.PlaneId).ToList();
         }
 
         public IList<Passenger> GetPassengers(Plane plane)
         {
-            return GetById(plane.PlaneId).Flights.SelectMany(f=>f.Tickets.Select(t=>t.Passenger)).ToList();
+            return GetById(plane.PlaneId).Flights.SelectMany(f=>f.Tickets.Select(t=>t.passenger)).ToList();
         }
     }
 }
