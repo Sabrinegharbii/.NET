@@ -24,6 +24,7 @@ namespace AM.ApplicationCore.Domain
         public virtual Plane plane { get; set; }
 
         public virtual IList<Passenger> Passengers { get; set; }
+        public virtual IList<Ticket> Tickets { get; set; }
 
     }
 }

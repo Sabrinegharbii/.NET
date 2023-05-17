@@ -15,6 +15,7 @@ namespace AM.ApplicationCore.Domain
         [DataType(DataType.Currency)]
         public float Salary { get; set; }
 
+        public virtual IList<Ticket> Tickets { get; set; }
         public override void PassengerType()
         {
             base.PassengerType();

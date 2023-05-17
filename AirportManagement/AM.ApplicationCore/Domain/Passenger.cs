@@ -33,6 +33,9 @@ namespace AM.ApplicationCore.Domain
         public string EmailAddress { get; set; }
 
         public virtual IList<Flight> Flights { get; set; }
+
+        public virtual IList<Ticket> Tickets { get; set; }
+
         public override string ToString()
         {
             return BirthDate + " " + EmailAddress + " " + TelNumber + " ";

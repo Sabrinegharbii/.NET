@@ -21,6 +21,7 @@ namespace AM.Infrastructure
         public DbSet<Traveller> Travellers { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            optionsBuilder.UseLazyLoadingProxies();
             optionsBuilder.UseSqlServer(@"Data Source=(localdb)\mssqllocaldb;Initial Catalog=SabrineGharbiiDB;Integrated Security=true");
             base.OnConfiguring(optionsBuilder);
         }

@@ -24,3 +24,21 @@ Passenger p = new Passenger();
 
 //Traveller t = new Traveller();
 //t.PassengerType();
+
+Plane plane1 = new Plane
+{
+    PlaneType = PlaneType.Airbus,
+    Capacity = 150,
+    ManufactureDate = new DateTime(2015, 02, 03)
+};
+
+Flight f1 = new Flight()
+{
+    Departure = "Tunis",
+    Airline = "Tunisair",
+    FlightDate = new DateTime(2022, 02, 01, 21, 10, 10),
+    Destination = "Paris",
+    EffectiveArrival = new DateTime(2022, 02, 01, 23, 10, 10),
+    EstimatedDuration = 103,
+    plane = plane1
+};
